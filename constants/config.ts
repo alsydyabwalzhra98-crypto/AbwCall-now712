@@ -1,0 +1,40 @@
+export const CONFIG = {
+  API_BASE_URL: process.env.EXPO_PUBLIC_API_URL || 'http://66.42.113.157:8000/api/v1',
+  API_TIMEOUT: 10000,
+
+  WEBSOCKET_URL: process.env.EXPO_PUBLIC_WEBSOCKET_URL || 'ws://66.42.113.157:8000/ws',
+
+  TWILIO_ACCOUNT_SID: process.env.EXPO_PUBLIC_TWILIO_ACCOUNT_SID || '',
+  TWILIO_AUTH_TOKEN: process.env.EXPO_PUBLIC_TWILIO_AUTH_TOKEN || '',
+  TWILIO_PHONE_NUMBER: process.env.EXPO_PUBLIC_TWILIO_PHONE_NUMBER || '',
+
+  APP_NAME: 'أبو الزهرا للاتصالات',
+  APP_VERSION: '1.0.0',
+
+  DEFAULT_ANIMATION_DURATION: 300,
+  DEBOUNCE_DELAY: 500,
+
+  MAX_CALL_DURATION: 7200,
+  CALL_RETRY_ATTEMPTS: 3,
+  CALL_RETRY_DELAY: 1000,
+
+  STORAGE_KEYS: {
+    AUTH_TOKEN: 'auth_token',
+    USER_DATA: 'user_data',
+    CALL_HISTORY: 'call_history',
+    CONTACTS: 'contacts',
+    SETTINGS: 'app_settings',
+  },
+
+  VALIDATION: {
+    MIN_PASSWORD_LENGTH: 8,
+    MAX_PHONE_LENGTH: 15,
+    MIN_NAME_LENGTH: 2,
+    MAX_NAME_LENGTH: 50,
+  },
+
+  PAGINATION: {
+    DEFAULT_PAGE_SIZE: 20,
+    MAX_PAGE_SIZE: 100,
+  },
+};
