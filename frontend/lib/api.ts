@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
 import { storage } from '../utils/storage';
 
-const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://66.42.113.157:8000/api/v1';
 
 class APIClient {
   private client: AxiosInstance;
